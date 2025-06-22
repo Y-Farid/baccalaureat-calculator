@@ -9,86 +9,99 @@
 <div class="calculator-container">
     <h1>Calculateur de Note au Baccalauréat</h1>
 
-    <!-- Section 1: Épreuves Anticipées de Français -->
+    <!-- Section 1: Epreuves Anticipées de Français (coeff. 10) -->
     <div class="section">
         <h2>Épreuves Anticipées de Français (Coefficient 10)</h2>
-        <label for="francais-ecrit">Français (écrit, coeff. 5):</label>
-        <input type="number" id="francais-ecrit" placeholder="Note /20">
-        
-        <label for="francais-oral">Français (oral, coeff. 5):</label>
-        <input type="number" id="francais-oral" placeholder="Note /20">
+        <div class="input-group">
+            <label for="francais-ecrit">Français (écrit, coeff. 5):</label>
+            <input type="number" id="francais-ecrit" placeholder="Note /20">
+        </div>
+        <div class="input-group">
+            <label for="francais-oral">Français (oral, coeff. 5):</label>
+            <input type="number" id="francais-oral" placeholder="Note /20">
+        </div>
     </div>
     
-    <!-- Section 2: Épreuves Terminales (Philo & Grand Oral) -->
+    <!-- Section 2: Epreuves Finales (coeff. 50) -->
     <div class="section">
-        <h2>Épreuves Terminales (Coefficient 18)</h2>
-        <label for="philo">Philosophie (coeff. 8):</label>
-        <input type="number" id="philo" placeholder="Note /20">
-
-        <label for="grand-oral">Grand Oral (coeff. 10):</label>
-        <input type="number" id="grand-oral" placeholder="Note /20">
+        <h2>Épreuves Finales (Coefficient 50)</h2>
+        <div class="input-group">
+            <label for="philo">Philosophie (coeff. 8):</label>
+            <input type="number" id="philo" placeholder="Note /20">
+        </div>
+        <div class="input-group">
+            <label for="grand-oral">Grand Oral (coeff. 10):</label>
+            <input type="number" id="grand-oral" placeholder="Note /20">
+        </div>
+        <div class="input-group">
+            <label for="spe-1">Spécialité 1 (coeff. 16):</label>
+            <input type="number" id="spe-1" placeholder="Note /20">
+        </div>
+        <div class="input-group">
+            <label for="spe-2">Spécialité 2 (coeff. 16):</label>
+            <input type="number" id="spe-2" placeholder="Note /20">
+        </div>
     </div>
-    
-    <!-- Section 3: Épreuves Terminales : Spécialités -->
+
+    <!-- NEW Section 3: Contrôle Continu de Première (coeff. 21) -->
     <div class="section">
-        <h2>Épreuves Terminales : Spécialités (Coefficient 32)</h2>
-        <label for="spe-1">Spécialité 1 (coeff. 16):</label>
-        <input type="number" id="spe-1" placeholder="Note /20">
-
-        <label for="spe-2">Spécialité 2 (coeff. 16):</label>
-        <input type="number" id="spe-2" placeholder="Note /20">
+        <h2>Contrôle Continu de Première (Coefficient 21)</h2>
+        <div class="input-group">
+            <label for="lva-premiere">Langue vivante A (coeff. 3):</label>
+            <input type="number" id="lva-premiere" placeholder="Moyenne /20">
+        </div>
+        <div class="input-group">
+            <label for="lvb-premiere">Langue vivante B (coeff. 3):</label>
+            <input type="number" id="lvb-premiere" placeholder="Moyenne /20">
+        </div>
+        <div class="input-group">
+            <label for="hist-geo-premiere">Histoire-géographie (coeff. 3):</label>
+            <input type="number" id="hist-geo-premiere" placeholder="Moyenne /20">
+        </div>
+        <div class="input-group">
+            <label for="ens-sci-premiere">Enseignement scientifique (coeff. 3):</label>
+            <input type="number" id="ens-sci-premiere" placeholder="Moyenne /20">
+        </div>
+        <div class="input-group">
+            <label for="emc-premiere">Enseignement moral et civique (coeff. 1):</label>
+            <input type="number" id="emc-premiere" placeholder="Moyenne /20">
+        </div>
+        <div class="input-group">
+            <label for="spe-premiere">Spécialité abandonnée (coeff. 8):</label>
+            <input type="number" id="spe-premiere" placeholder="Moyenne /20">
+        </div>
     </div>
 
-    <!-- Section 4: Contrôle Continu (Detailed Version - Coefficient 40) -->
-<div class="section" id="controle-continu-section">
-    <h2>Contrôle Continu (Coefficient 40)</h2>
-    <p>Entrez vos moyennes annuelles pour chaque matière du tronc commun.</p>
-    
-    <!-- We wrap each label/input pair in a div to style them easily -->
-    <div class="input-group">
-        <label for="lva">Langue vivante A (coeff. 3):</label>
-        <input type="number" id="lva" placeholder="Moyenne /20">
+    <!-- NEW Section 4: Contrôle Continu de Terminale (coeff. 19) -->
+    <div class="section">
+        <h2>Contrôle Continu de Terminale (Coefficient 19)</h2>
+        <div class="input-group">
+            <label for="lva-terminale">Langue vivante A (coeff. 3):</label>
+            <input type="number" id="lva-terminale" placeholder="Moyenne /20">
+        </div>
+        <div class="input-group">
+            <label for="lvb-terminale">Langue vivante B (coeff. 3):</label>
+            <input type="number" id="lvb-terminale" placeholder="Moyenne /20">
+        </div>
+        <div class="input-group">
+            <label for="hist-geo-terminale">Histoire-géographie (coeff. 3):</label>
+            <input type="number" id="hist-geo-terminale" placeholder="Moyenne /20">
+        </div>
+        <div class="input-group">
+            <label for="ens-sci-terminale">Enseignement scientifique (coeff. 3):</label>
+            <input type="number" id="ens-sci-terminale" placeholder="Moyenne /20">
+        </div>
+        <div class="input-group">
+            <label for="eps-terminale">Éducation physique et sportive (coeff. 6):</label>
+            <input type="number" id="eps-terminale" placeholder="Moyenne /20">
+        </div>
+        <div class="input-group">
+            <label for="emc-terminale">Enseignement moral et civique (coeff. 1):</label>
+            <input type="number" id="emc-terminale" placeholder="Moyenne /20">
+        </div>
     </div>
 
-    <div class="input-group">
-        <label for="lvb">Langue vivante B (coeff. 3):</label>
-        <input type="number" id="lvb" placeholder="Moyenne /20">
-    </div>
-
-    <div class="input-group">
-        <label for="hist-geo">Histoire-géographie (coeff. 3):</label>
-        <input type="number" id="hist-geo" placeholder="Moyenne /20">
-    </div>
-
-    <div class="input-group">
-        <label for="ens-sci">Enseignement scientifique (coeff. 3):</label>
-        <input type="number" id="ens-sci" placeholder="Moyenne /20">
-    </div>
-    
-    <div class="input-group">
-        <label for="eps">Éducation physique et sportive (coeff. 3):</label>
-        <input type="number" id="eps" placeholder="Moyenne /20">
-    </div>
-
-    <div class="input-group">
-        <label for="emc">Enseignement moral et civique (coeff. 1):</label>
-        <input type="number" id="emc" placeholder="Moyenne /20">
-    </div>
-
-    <div class="input-group">
-        <label for="spe-premiere">Spécialité abandonnée en Première (coeff. 8):</label>
-        <input type="number"id="spe-premiere" placeholder="Moyenne /20">
-    </div>
-    
-    <!-- The remaining 16 points for the 40% total come from the average of all other subjects. We will represent this with a single field for simplicity. -->
-    <div class="input-group">
-        <label for="moyenne-bulletins">Moyenne des bulletins (coeff. 16):</label>
-        <input type="number" id="moyenne-bulletins" placeholder="Moyenne /20">
-    </div>
-
-</div>
-
-    <!-- Calculation and Result -->
+    <!-- Calculation Button and Result Display -->
     <button id="calculate-btn">Calculer ma note</button>
     <div id="result-container">
         <h2>Votre Note Finale Estimée: <span id="final-grade">...</span> / 20</h2>
@@ -96,5 +109,6 @@
     </div>
 </div>
 
+<script src="script.js"></script>
 </body>
 </html>
