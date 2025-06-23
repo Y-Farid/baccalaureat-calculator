@@ -1,6 +1,6 @@
 # Simulateur de Note au Baccalauréat
 
-A web-based calculator to accurately estimate final grades for the French Baccalauréat Général, based on the 2024 coefficients.
+A web-based calculator to accurately estimate final grades for the French Baccalauréat Général, based on the 2025 coefficients.
 
 **➡️ Live Demo: [https://y-farid.github.io/baccalaureat-calculator/](https://y-farid.github.io/baccalaureat-calculator/)**
 
@@ -12,11 +12,11 @@ A web-based calculator to accurately estimate final grades for the French Baccal
 
 This project was a self-directed challenge undertaken during my summer break to develop practical engineering and programming skills. As a prospective engineering student, I wanted to go beyond theory and build a tangible, useful tool from scratch. I chose a Baccalauréat calculator because it solved a real-world problem for my peers and involved precise logic and data management.
 
-The entire project was completed in a 14-day sprint, demonstrating my ability to learn quickly and manage a project from conception to deployment.
+The entire project was completed in a 7-day sprint, demonstrating my ability to learn quickly and manage a project from conception to deployment.
 
 ## ✨ Features
 
-*   **Accurate Calculations:** Uses the official 2024 coefficients for all subjects in the Baccalauréat Général.
+*   **Accurate Calculations:** Uses the official 2025 coefficients for all subjects in the Baccalauréat Général.
 *   **Comprehensive Input:** Includes all required fields, from *épreuves anticipées* to *contrôle continu* for both *Première* and *Terminale*.
 *   **Instant Feedback:** The final grade is calculated and displayed in real-time on the webpage.
 *   **Official Mentions:** Automatically determines and displays the correct mention, from "Admis(e)" to "Félicitations du jury".
@@ -39,5 +39,5 @@ This project was my first experience with web development, and it presented seve
 
 ## 🔮 Future Improvements
 
-*   **IB & A-Level Converter:** Implement a feature to convert the final Baccalauréat grade (/20) to equivalent scoring systems like the International Baccalaureate (IB) and British A-Levels.
+*   **IB & A-Level Converter:** Implement a feature to convert the final Baccalauréat grade (/20) to equivalent scoring systems like the International Baccalaureate (IB), British A-Levels and GPA.
 *   **Error Handling:** Add more robust validation to prevent users from entering grades outside the 0-20 range.
