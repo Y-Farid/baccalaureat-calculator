@@ -83,3 +83,15 @@ button {
     color: #1abc9c;
     font-weight: bold;
 }
+/* Styling for the "Coming Soon" feature box */
+.feature-soon {
+    text-align: center;
+    margin-top: 25px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    font-style: italic;
+    color: #e74c3c; /* A strong but not alarming red */
+    font-size: 0.9em;
+    font-weight: bold; /* Let's make it bold to stand out more */
+}
