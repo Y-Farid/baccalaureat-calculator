@@ -39,5 +39,15 @@ This project was my first experience with web development, and it presented seve
 
 ## 🔮 Future Improvements
 
-*   **IB & A-Level Converter:** Implement a feature to convert the final Baccalauréat grade (/20) to equivalent scoring systems like the International Baccalaureate (IB), British A-Levels and GPA.
-*   **Error Handling:** Add more robust validation to prevent users from entering grades outside the 0-20 range.
+This project serves as a strong foundation, and I have a clear roadmap for future enhancements to increase its utility for students planning international studies:
+
+*   **Implement an International Grade Converter:**
+    *   **Goal:** Add a feature to convert the final Baccalauréat score (/20) to three major international scoring systems:
+        1.  **US GPA:** Convert the score to a standard 4.0 Grade Point Average scale.
+        2.  **IB Points:** Map the grade to the International Baccalaureate scale (out of 45).
+        3.  **A-Levels:** Provide an equivalent British A-Level grade (A*, A, B, etc.).
+    *   **Plan:** This would involve researching official and commonly used conversion tables for each system. The UI would be updated with a new results section, and a JavaScript function would be written to handle the mapping logic for all three conversions based on the final calculated grade.
+
+*   **Add Robust Input Validation:**
+    *   **Goal:** Improve the user experience by preventing invalid inputs.
+    *   **Plan:** Use JavaScript to validate that grades are entered within the 0-20 range. If a user enters an invalid number, the input field's border could turn red, and a small message would appear guiding them to enter a correct value. This prevents calculation errors and makes the tool more user-friendly.
