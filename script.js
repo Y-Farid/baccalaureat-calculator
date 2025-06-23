@@ -76,13 +76,13 @@ finalGradeElement.textContent = finalGrade.toFixed(2);
     let mentionText = ''; // Start with an empty string
 
     if (finalGrade >= 18) {
-      mentionText = 'Félicitations du jury';
+      mentionText = 'Félicitations du jury!';
     } else if (finalGrade >= 16) {
-      mentionText = 'Mention Très Bien';
+      mentionText = 'Mention Très Bien!';
     } else if (finalGrade >= 14) {
-      mentionText = 'Mention Bien';
+      mentionText = 'Mention Bien!';
     } else if (finalGrade >= 12) {
-      mentionText = 'Mention Assez Bien';
+      mentionText = 'Mention Assez Bien!';
     } else if (finalGrade >= 10) {
       mentionText = 'Admis(e)';
     } else if (finalGrade >= 8) {
