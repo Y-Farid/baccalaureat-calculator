@@ -95,3 +95,44 @@ button {
     font-size: 0.9em;
     font-weight: bold; /* Let's make it bold to stand out more */
 }
+/* --- V2.0: Converter Styles --- */
+
+#converter-container {
+    margin-top: 25px;
+    padding: 20px;
+    background-color: #2c3e50; /* Matches the result box background */
+    border-radius: 8px;
+}
+
+#converter-container h3 {
+    text-align: center;
+    margin-top: 0;
+    color: #ecf0f1;
+}
+
+.results-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px; /* Adds space between the cards */
+}
+
+.result-card {
+    background-color: #34495e; /* Matches the main container color */
+    flex-basis: 32%; /* Each card takes up about a third of the space */
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.result-card h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #1abc9c; /* Use the accent color for titles */
+}
+
+.result-card p {
+    font-size: 1.5em; /* Make the result number bigger */
+    font-weight: bold;
+    margin-bottom: 0;
+    color: white;
+}
