@@ -4,10 +4,7 @@ A web-based calculator to accurately estimate final grades for the French Baccal
 
 **➡️ Live Demo: [https://y-farid.github.io/baccalaureat-calculator/](https://y-farid.github.io/baccalaureat-calculator/)**
 
-![Uploading Calculator-Screenshot.png…]()
-![Uploading Calculator-Screenshot.png…]()
-![Uploading Calculator-Screenshot.png…]()
-![Uploading Calculator-Screenshot.png…]()
+![Calculator-Screenshot](https://github.com/user-attachments/assets/fa2cae34-fb02-41f3-90c9-d597e18d7b0b)
 
 ---
 
