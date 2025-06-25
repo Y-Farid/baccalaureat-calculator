@@ -36,7 +36,7 @@ function getALevelGrade(grade) {
 }
 function getIBGrade(grade) {
   if (grade >= 17) return '7'; if (grade >= 15) return '6'; if (grade >= 13) return '5';
-  if (grade >= 10) return '4'; return 'Low Pass (1-3)';
+  if (grade >= 10) return '4'; if (grade >= 8) return 'Fail (1-3)';
 }
 
 
