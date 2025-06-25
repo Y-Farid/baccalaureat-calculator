@@ -1,10 +1,13 @@
-# Simulateur de Note au Baccalauréat
+![image](https://github.com/user-attachments/assets/083214f7-51bf-443d-a04d-e518ff68803a)![image](https://github.com/user-attachments/assets/083214f7-51bf-443d-a04d-e518ff68803a)# Simulateur de Note au Baccalauréat
 
 A web-based calculator to accurately estimate final grades for the French Baccalauréat Général, based on the 2025 coefficients.
 
 **➡️ Live Demo: [https://y-farid.github.io/baccalaureat-calculator/](https://y-farid.github.io/baccalaureat-calculator/)**
 
-![Calculator-screenshot](https://github.com/user-attachments/assets/bcc5330a-ea9d-49e3-8807-6786357c3499)
+![Uploading Calculator-Screenshot.png…]()
+![Uploading Calculator-Screenshot.png…]()
+![Uploading Calculator-Screenshot.png…]()
+![Uploading Calculator-Screenshot.png…]()
 
 ---
 
