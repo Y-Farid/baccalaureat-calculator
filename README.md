@@ -20,6 +20,7 @@ The entire project was completed in a 7-day sprint, demonstrating my ability to 
 *   **Comprehensive Input:** Includes all required fields, from *épreuves anticipées* to *contrôle continu* for both *Première* and *Terminale*.
 *   **Instant Feedback:** The final grade is calculated and displayed in real-time on the webpage.
 *   **Official Mentions:** Automatically determines and displays the correct mention, from "Admis(e)" to "Félicitations du jury".
+*   **International Grade Converter:** Based on official and sourced conversion tables, the tool now provides estimated grade equivalencies for the US (Letter Grade), UK (A-Levels), and International Baccalaureate (IB Grade 1-7).
 
 ## 🛠️ Tech Stack
 
@@ -40,13 +41,6 @@ This project was my first experience with web development, and it presented seve
 ## 🔮 Future Improvements
 
 This project serves as a strong foundation, and I have a clear roadmap for future enhancements to increase its utility for students planning international studies:
-
-*   **Implement an International Grade Converter:**
-    *   **Goal:** Add a feature to convert the final Baccalauréat score (/20) to three major international scoring systems:
-        1.  **US GPA:** Convert the score to a standard 4.0 Grade Point Average scale.
-        2.  **IB Points:** Map the grade to the International Baccalaureate scale (out of 45).
-        3.  **A-Levels:** Provide an equivalent British A-Level grade (A*, A, B, etc.).
-    *   **Plan:** This would involve researching official and commonly used conversion tables for each system. The UI would be updated with a new results section, and a JavaScript function would be written to handle the mapping logic for all three conversions based on the final calculated grade.
 
 *   **Add Robust Input Validation:**
     *   **Goal:** Improve the user experience by preventing invalid inputs.
