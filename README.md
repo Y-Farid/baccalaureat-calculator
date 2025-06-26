@@ -3,8 +3,9 @@
 A web-based calculator to accurately estimate final grades for the French Baccalauréat Général, based on the 2025 coefficients.
 
 **➡️ Live Demo: [https://y-farid.github.io/baccalaureat-calculator/](https://y-farid.github.io/baccalaureat-calculator/)**
+![Calculator-Screenshot](https://github.com/user-attachments/assets/bf56b066-a0eb-40e5-8196-f3daec6c4ae3)
+![Calculator-Screenshot1](https://github.com/user-attachments/assets/d0559279-6c97-4671-89a5-f54717c0ec4e)
 
-![Calculator-Screenshot](https://github.com/user-attachments/assets/fa2cae34-fb02-41f3-90c9-d597e18d7b0b)
 
 ---
 
