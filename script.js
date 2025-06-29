@@ -35,8 +35,16 @@ function getALevelGrade(grade) {
   if (grade >= 12) return 'C'; if (grade >= 10) return 'D'; if (grade >= 8) return 'E'; return 'Fail';
 }
 function getIBGrade(grade) {
-  if (grade >= 17) return '7'; if (grade >= 15) return '6'; if (grade >= 13) return '5';
-  if (grade >= 10) return '4'; if (grade >= 8) return 'Fail (1-3)';
+    if (grade >= 17) return '7';
+    if (grade >= 15) return '6';
+    if (grade >= 13) return '5';
+    if (grade >= 10) return '4';
+    // Le système IB note généralement jusqu'à 1. Un score en dessous de 4 est souvent un échec.
+    // On peut simplifier pour l'utilisateur.
+    if (grade >= 8) return '3'; 
+    if (grade >= 6) return '2';
+    if (grade >= 4) return '1';
+    return 'Fail';
 }
 
 
@@ -45,15 +53,31 @@ function getIBGrade(grade) {
 // =================================================================
 
 calculateButton.addEventListener('click', () => {
-  let totalPoints = 0; const totalCoefficients = 100;
+  let totalPoints = 0;
+  const totalCoefficients = 100;
+
   gradeInputs.forEach(input => {
-    const grade = parseFloat(input.value) || 0;
+    // --- CHANGEMENT 1: Gérer la virgule ---
+    // On récupère la valeur de l'utilisateur et on remplace la virgule par un point.
+    const sanitizedValue = input.value.replace(',', '.');
+
+    // On convertit cette valeur "nettoyée" en nombre. Si le champ est vide, on met 0.
+    const grade = parseFloat(sanitizedValue) || 0;
+
+    // --- CHANGEMENT 2: Valider que la note est entre 0 et 20 ---
+    // On utilise Math.max pour s'assurer que la note n'est pas en dessous de 0.
+    // Puis on utilise Math.min pour s'assurer que le résultat n'est pas au-dessus de 20.
+    const clampedGrade = Math.max(0, Math.min(grade, 20));
+
     const coefficient = coefficients[input.id];
-    if (coefficient) { totalPoints += grade * coefficient; }
+    if (coefficient) {
+      // On utilise la note validée (clampedGrade) pour le calcul.
+      totalPoints += clampedGrade * coefficient;
+    }
   });
 
   const finalGrade = totalPoints / totalCoefficients;
-  finalGradeElement.textContent = finalGrade.toFixed(2);
+  finalGradeElement.textContent = finalGrade.toFixed(2); // .toFixed(2) arrondit à 2 décimales
 
   let mentionText = '';
   if (finalGrade >= 18) { mentionText = 'Félicitations du jury'; }
@@ -65,17 +89,14 @@ calculateButton.addEventListener('click', () => {
   else { mentionText = 'Ajourné(e)'; }
   mentionResultElement.textContent = mentionText;
 
-  // --- V2.0 CONVERSION LOGIC ---
-  // Call our new helper functions with the calculated finalGrade
+  // --- V2.0 CONVERSION LOGIC (aucune modification ici) ---
   const usGrade = getUSGrade(finalGrade);
   const aLevelGrade = getALevelGrade(finalGrade);
   const ibGrade = getIBGrade(finalGrade);
 
-  // Update the text content of the new result paragraphs
   usGradeResultElement.textContent = usGrade;
   alevelResultElement.textContent = aLevelGrade;
   ibResultElement.textContent = ibGrade;
 
-  // This is the line that makes the magic happen: un-hide the container
   converterContainer.style.display = 'block';
 });
